@@ -14,6 +14,7 @@ int main() {
         }
     }
 
+    // printf("(array +1 ): %p \n", (array + 1));
     printf("*(array +1 ): %p \n", *(array + 1));
     printf("array[1]: %p \n", array[1]);
     printf("&array[1][0]: %p \n", &array[1][0]);

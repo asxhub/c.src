@@ -11,8 +11,13 @@ int main() {
 
     length = strlen(str);
 
-    for (i = 0; i < length; ++i) {
-        printf("%c", str[i]);
+//    for (i = 0; i < length; ++i) {
+//        printf("%c", str[i]);
+//    }
+
+    // 或者这样循环访问
+    for (int j = 0; j < length; ++j) {
+        printf("%c", *(str + j));
     }
 
     printf("\n");

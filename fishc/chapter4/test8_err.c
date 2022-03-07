@@ -1,15 +1,14 @@
 //
-// Created by weibin on 2022-01-26.
+// Created by weibin on 2022-03-07.
 //
 
 #include <stdio.h>
 
 int main() {
     char str[] = "I love FishC.com";
-    char *target = str;
     int count = 0;
 
-    while (*target++ != '\0') {
+    while (*str++ != '\0') {
         count++;
     }
 
@@ -17,4 +16,3 @@ int main() {
 
     return 0;
 }
-
