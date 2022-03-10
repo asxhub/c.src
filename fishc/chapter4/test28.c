@@ -13,7 +13,13 @@ int main() {
     printf("cnum: %d, &cnum: %p \n", cnum, &cnum);
     printf("*pc: %d,pc:%p \n", *pc, pc);
 
-    *pc = 1024;
+    // 尝试修改 *pc 的值
+//    *pc = 1024;
+
+    pc = &num;
+    num = 1024;
+    *pc = 1111;
+
     printf("*pc: %d \n", *pc);
 
     return 0;
